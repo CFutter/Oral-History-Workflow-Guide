@@ -1,0 +1,120 @@
+site_name: Oral History Archive
+site_description: A practical guide for oral history researchers at the University of Zurich
+site_url: ""  # deployment URL
+
+theme:
+  name: material
+  language: en
+  # UZH-aligned palette
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom 
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: DM Sans
+    code: JetBrains Mono
+  icon:
+    logo: material/book-open-page-variant
+    repo: fontawesome/brands/github
+  features:
+    # Navigation
+    - navigation.tabs           
+    - navigation.tabs.sticky    
+    - navigation.sections       
+    - navigation.expand        
+    - navigation.path           
+    - navigation.top            
+    - navigation.indexes       
+    - navigation.footer         
+    # Search
+    - search.suggest
+    - search.highlight
+    # Content
+    - content.tabs.link         
+    - content.code.copy         
+    # Table of contents
+    - toc.follow               
+
+markdown_extensions:
+  - md_in_html
+  - admonition
+  - tables
+  - attr_list
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: false
+
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/decision-tree.js
+  - javascripts/assessment-report.js
+  - javascripts/decision-tree-entry.js
+
+extra:
+  generator: false
+
+nav:
+- Home: index.md
+
+- Assessment:
+  - Start Assessment: decision-tree/decision-tree-entry.md
+  - Step 1 — Basics: decision-tree/step-1-basic.md
+  - Step 2 — Sensitivity: decision-tree/step-2-sensitivity.md
+  - Step 3 — Risk: decision-tree/step-3-risk.md
+  - Step 4 — Jurisdiction: decision-tree/step-4-jurisdiction.md
+  - Step 5 — Ethics: decision-tree/step-5-ethics.md
+  - Step 6 — Processing: decision-tree/step-6-processing.md
+  - Step 7 — Archiving: decision-tree/step-7-archiving.md
+  - Your Report: decision-tree/assessment-report.md
+
+- Guide:
+  - Project Planning: guide/planning.md
+  - Conducting Interviews: guide/interviewing.md
+  - Processing & Documentation: guide/processing.md
+  - Storage & Security: guide/storage.md
+  - Archiving & Access: guide/archiving.md
+
+- Legal:
+  - Legal & Ethical Framework: legal/legal-ethical-framework.md
+  - Sensitivity Tiers: legal/sensitivity-classification.md
+  - Consent Form Templates: legal/consent-templates.md
+
+- Tools:
+  - Overview: tools-equipment/tools-index.md
+  - Audio Recording: tools-equipment/audio-recording-equipment.md
+  - Video Recording: tools-equipment/video-recording-equipment.md
+  - Remote Recording: tools-equipment/remote-online-recording-tools.md
+  - Transcription: tools-equipment/transcription-tools.md
+  - Secure Communication: tools-equipment/secure-communication-tools.md
+  - Encryption & Security: tools-equipment/encryption-and-security-tools.md
+  - Anonymization: tools-equipment/anonymization-tools.md
+  - Storage Solutions: tools-equipment/swiss-university-storage-solutions.md
+
+- Reference:
+  - Glossary & References: reference/glossary.md
+
+copyright: Copyright &copy; 2026 UZH
+
+strict: true

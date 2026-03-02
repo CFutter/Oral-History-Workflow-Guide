@@ -396,9 +396,23 @@ body {
     min-height: 100%;
   }
 
-  .md-grid { max-width: 100%; margin-left: 0; margin-right: 0; }
-  .md-main__inner { margin-left: 0; margin-right: 0; }
-  .md-content { max-width: 52rem; margin-left: auto; margin-right: auto; }
+  .md-grid { 
+    max-width: 100%; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+
+  .md-main__inner { 
+    margin-left: 0; 
+    margin-right: 0; 
+    padding-left: 12.1rem;
+    padding-right: 12.1rem;
+  }
+  .md-content { 
+    max-width: 52rem; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
 }
 
 @media screen and (min-width: 60em) and (max-width: 76.24em) {
@@ -421,6 +435,11 @@ body {
     min-height: 100%;
   }
   .md-grid { max-width: 100%; }
+
+  .md-main__inner { 
+    padding-left: 12.1rem;
+  }
+
   .md-content { max-width: 52rem; margin-left: auto; margin-right: auto; }
 }
 
